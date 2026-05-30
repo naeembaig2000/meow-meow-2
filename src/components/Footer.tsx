@@ -171,7 +171,7 @@ export default function Footer() {
       {/* Extreme Bottom terms & credits block */}
       <div className="bg-slate-980 px-4 py-6 border-t border-slate-900/40 text-center text-3xs text-slate-500">
         <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {currentYear} {CLINIC_META.practiceName}. All global rights reserved.</p>
+          <p>© {currentYear} {CLINIC_META.practiceName}. All global rights reserved. <br /><span className="text-[10px] text-emerald-500/50">✓ CI/CD System Verified</span></p>
           <p>Designed under expert CRO guidelines for maximum direct medical lead captures.</p>
         </div>
       </div>
