@@ -10,6 +10,14 @@ interface NavbarProps {
 export default function Navbar({ viewMode, setViewMode }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur-md">
       {/* Top Banner with Quick Stats/Hours */}
@@ -47,9 +55,9 @@ export default function Navbar({ viewMode, setViewMode }: NavbarProps) {
             <span className="font-serif text-xl font-bold">M</span>
           </div>
           <div>
-            <span className="block font-sans text-lg font-bold tracking-tight text-slate-900 md:text-xl">
+            <h1 className="font-sans text-lg font-bold tracking-tight text-slate-900 md:text-xl">
               {CLINIC_META.practiceName}
-            </span>
+            </h1>
             <p className="-mt-1 text-2xs font-medium text-emerald-600 uppercase tracking-widest">
               By Dr. Naeem Baig
             </p>
@@ -60,16 +68,16 @@ export default function Navbar({ viewMode, setViewMode }: NavbarProps) {
         <nav className="hidden items-center gap-6 md:flex">
           {viewMode === "patient" && (
             <div className="flex items-center gap-5 text-sm font-medium text-slate-600">
-              <a href="#services" className="transition hover:text-emerald-600">
+              <a href="#services" onClick={(e) => handleScroll(e, "services")} className="transition hover:text-emerald-600">
                 Special Treatments
               </a>
-              <a href="#doctor" className="transition hover:text-emerald-600">
+              <a href="#doctor" onClick={(e) => handleScroll(e, "doctor")} className="transition hover:text-emerald-600">
                 Meet the Dentist
               </a>
-              <a href="#reviews" className="transition hover:text-emerald-600">
+              <a href="#reviews" onClick={(e) => handleScroll(e, "reviews")} className="transition hover:text-emerald-600">
                 Patient Stories
               </a>
-              <a href="#book" className="transition hover:text-emerald-600">
+              <a href="#book" onClick={(e) => handleScroll(e, "book")} className="transition hover:text-emerald-600">
                 Book Visit
               </a>
             </div>
@@ -175,28 +183,40 @@ export default function Navbar({ viewMode, setViewMode }: NavbarProps) {
             <div className="flex flex-col gap-3 py-2 text-sm font-semibold text-slate-700">
               <a
                 href="#services"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleScroll(e, "services");
+                }}
                 className="rounded-lg py-2 hover:text-emerald-600"
               >
                 Special Treatments
               </a>
               <a
                 href="#doctor"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleScroll(e, "doctor");
+                }}
                 className="rounded-lg py-2 hover:text-emerald-600"
               >
                 Meet the Dentist
               </a>
               <a
                 href="#reviews"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleScroll(e, "reviews");
+                }}
                 className="rounded-lg py-2 hover:text-emerald-600"
               >
                 Patient Stories
               </a>
               <a
                 href="#book"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleScroll(e, "book");
+                }}
                 className="rounded-lg py-2 hover:text-emerald-600"
               >
                 Book Appointment

@@ -47,6 +47,10 @@ export default function Hero() {
 
               <a
                 href="#services"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("services")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
                 className="flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-7 py-4 text-base font-semibold text-slate-700 transition hover:bg-slate-50 hover:text-slate-900"
               >
                 <span>Explore Services</span>

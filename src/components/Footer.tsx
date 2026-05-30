@@ -6,10 +6,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 text-slate-300 border-t border-slate-900" id="book">
+    <footer className="bg-slate-950 text-slate-300 border-t border-slate-900" id="contact">
       
       {/* Dynamic Urgent CTA Banner for Conversion optimization */}
-      <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-12 px-4 text-center relative overflow-hidden">
+      <div id="book" className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-12 px-4 text-center relative overflow-hidden">
         {/* Abstract blur backdrop */}
         <div className="absolute top-0 right-0 h-40 w-40 rounded-full bg-white/5 blur-xl" />
         <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-black/10 blur-xl" />
