@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 text-slate-300 border-t border-slate-900" id="contact">
+    <footer className="bg-slate-950 text-slate-300 border-t border-slate-900" id="book">
       
       {/* Dynamic Urgent CTA Banner for Conversion optimization */}
       <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-12 px-4 text-center relative overflow-hidden">

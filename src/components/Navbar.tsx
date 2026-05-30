@@ -47,9 +47,9 @@ export default function Navbar({ viewMode, setViewMode }: NavbarProps) {
             <span className="font-serif text-xl font-bold">M</span>
           </div>
           <div>
-            <h1 className="font-sans text-lg font-bold tracking-tight text-slate-900 md:text-xl">
+            <span className="block font-sans text-lg font-bold tracking-tight text-slate-900 md:text-xl">
               {CLINIC_META.practiceName}
-            </h1>
+            </span>
             <p className="-mt-1 text-2xs font-medium text-emerald-600 uppercase tracking-widest">
               By Dr. Naeem Baig
             </p>
