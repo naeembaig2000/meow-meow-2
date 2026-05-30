@@ -1,6 +1,6 @@
 import React from "react";
 import { CLINIC_META, CLINIC_CONTACT, CLINIC_HOURS } from "../data";
-import { Medal, GraduationCap, ClipboardCheck, MessageCircle, HeartHandshake } from "lucide-react";
+import { Medal, GraduationCap, ClipboardCheck, MessageCircle, HeartHandshake, Award } from "lucide-react";
 // @ts-ignore
 import drNaeemImage from "../assets/images/dr_naeem_baig_actual.jpeg";
 
@@ -20,7 +20,7 @@ export default function About() {
             Dr. Naeem Baig
           </h2>
           <p className="text-emerald-400 font-medium text-sm mt-1.5 leading-relaxed">
-            Lead Dentist & Implantologist with a BDS Degree, a special clinical focus in Implantology, and over 35 years of trusted practice.
+            Lead Dentist & Implantologist with a BDS Degree, former 14-Year Head of Department at Ittefaq Hospital Lahore, and over 35 years of trusted clinical practice.
           </p>
         </div>
 
@@ -47,6 +47,7 @@ export default function About() {
               <div className="p-4 text-center">
                 <p className="font-serif text-base font-bold text-white">Dr. Naeem Baig</p>
                 <p className="text-3xs text-emerald-400 font-extrabold tracking-widest uppercase mt-0.5">Clinical Director, BDS</p>
+                <p className="text-[10px] text-slate-400 font-bold tracking-wide mt-1">Former 14-Year HOD, Ittefaq Hospital</p>
               </div>
             </div>
 
@@ -71,6 +72,18 @@ export default function About() {
                     <h4 className="font-extrabold text-sm text-slate-100">3.5 Decades of Expertise</h4>
                     <p className="text-2xs text-slate-400 mt-0.5 leading-relaxed">
                       Over 35 years handling intricate dental crowns, surgical extractions, and restorative diagnostics in Lahore.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 items-start">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-900 border border-slate-800 text-emerald-400">
+                    <Award className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm text-slate-100">14 Years HOD, Ittefaq Hospital</h4>
+                    <p className="text-2xs text-slate-400 mt-0.5 leading-relaxed">
+                      Served as the prestigious Head of Department (HOD) at Lahore's leading Ittefaq Hospital, supervising complex clinical cases and restorative wards.
                     </p>
                   </div>
                 </div>
@@ -126,7 +139,7 @@ export default function About() {
             </div>
 
             <p className="font-sans text-xs leading-relaxed text-slate-300">
-              Dr. Naeem Baig has dedicated over 3.5 decades to delivering elite family and surgical oral healthcare. Combining a seasoned surgeon's diagnostic accuracy with a reassuring dentist's warmth, Dr. Baig builds clinical plans focused on tooth preservation.
+              Dr. Naeem Baig has dedicated over 3.5 decades to delivering elite family and surgical oral healthcare, which includes serving for 14 distinguished years as the Head of Department (HOD) at Ittefaq Hospital, Lahore. Combining a seasoned specialist's diagnostic accuracy with a reassuring dentist's warmth, Dr. Baig builds clinical plans focused on tooth preservation.
             </p>
 
             <blockquote className="border-l-2 border-emerald-400 pl-4 py-1 italic font-serif text-slate-200 text-xs leading-relaxed bg-slate-900/40 rounded-r-lg pr-2">

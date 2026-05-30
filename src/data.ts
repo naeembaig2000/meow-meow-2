@@ -3,7 +3,7 @@ import { ServiceItem, ClinicHours, ClinicContact, ClinicMetadata, Testimonial } 
 export const CLINIC_META: ClinicMetadata = {
   practiceName: "Mediplex Family Dentistry",
   dentistName: "Dr. Naeem Baig",
-  dentistTitle: "BDS, Dental Implantologist (35+ Years Experience)",
+  dentistTitle: "BDS, Dental Implantologist (35+ Years Experience | Former 14-Year HOD at Ittefaq Hospital)",
   experienceYears: 35,
   locationState: "DHA Lahore (Phase 1, Near Ghazi Road)"
 };
